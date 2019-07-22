@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/static/index.css">
+	<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+	<title>物联创客空间协会官网</title>
+	<meta content="物联网协会,互联网,智能家居,物联网," name="Keywords">
+	<meta content=" 物联创客空间是隶属电信学院的一个专业和科技创新社团，专注于智能家居等多方面物联网知识的学习与研究。协会创立的初衷是为有志于创新，不断追求进步的莘莘学子提供一个学习交流的平台。在张胜宇老师的带领和指导下，协会成员在一些比赛及创新合作等方面均取得不错的成绩。" name="description">
+
+	<script>
+	window.onload=function(){
+		       var oDiv = document.getElementById("content");
+			   var oPre = document.getElementById("pre");
+			   var oNex = document.getElementById("next");
+			   var oUl = document.getElementById("list");
+			   var aLi = oUl.getElementsByTagName("li");
+			   var oImg = document.getElementById("picture");
+			   var aMin=oUl.getElementsByTagName("div");
+			   var apic=oUl.getElementsByTagName("img");
+			   var aImg = ['/static/img/wc01.jpg','/static/img/2.jpg','/static/img/chip.jpeg','/static/img/wc04.jpg'];
+			   var num=0;
+			  //初始化
+			   function fntab(){
+				          oImg.src=aImg[num];
+						   for( var i=0; i<aLi.length;i++){
+                                         aLi[i].className = '';
+                                         }
+									     aLi[num].className = 'active'; 
+				   } 
+			  fntab();
+			  //‘<’‘>’鼠标移入事件
+			  oPre.onmouseover = function(){
+				       this.className='hover';
+				  }
+			 oNex.onmouseover = function(){
+				       this.className = 'hover';
+				 }
+			 //‘<’‘>’鼠标移出事件
+			  oPre.onmouseout = function(){
+				       this.className='';
+				  }
+			 oNex.onmouseout= function(){
+				       this.className = '';
+				 }
+			//点击上一张，图片切换
+			  oPre.onclick = function(){
+				         num--;
+						 if(num==-1){
+							      num=aImg.length-1;
+							  }
+						  fntab();
+					    }
+              //点击下一张，图片切换
+			 oNex.onclick = function(){
+					   num++;
+					   if(num==aImg.length){
+						        num=0;
+						   }
+					    fntab();
+				 }
+			  //显示缩略图
+			  for(i=0;i<aLi.length;i++){
+				      aLi[i].index=i;
+					  aLi[i].onmouseover=function(){
+						        for(i=0;i<aLi.length;i++){
+									     aMin[i].className='';
+										 aMin[i].style.left='';
+										 aMin[i].innerHTML='<img>'+'</img>';
+										 
+									}       
+							aMin[this.index].className='min'; 
+							aMin[this.index].style.left=-72+this.index*25+'px';
+							apic[this.index].src=aImg[this.index];
+							apic[this.index].className='little';
+							apic[this.index].style.left=7+'px';
+							apic[this.index].style.top=5+'px';
+							
+							
+               }
+				     aLi[i].onmouseout=function(){
+						        for(i=0;i<aLi.length;i++){
+								aMin[i].className='';
+                       }   
+							   aMin[this.index].className='';   
+                               aMin[this.index].innerHTML='';
+						  }
+				     aLi[i].onclick=function(){
+						      num=this.index;
+							   fntab();
+							   
+						 }
+				  }
+			  	 
+				
+	};
+</script>
+</head>
+<body>
+
+ <div class="navbar">
+ 	<ul id="navbar-left">
+			<li><a href="#" id="off"><img src="/static/img/logo.png" > </a></li>
+			<li><a href="index" target="_self">IOT协会</a></li>
+			<li><a href="project" target="_self">项目成果</a></li>
+			<li><a href="datum" target="_self">资料大全</a></li>
+			<li><a href="xiehui" target="_self">日常生活</a></li>	
+	</ul>
+ </div>
+
+	<div id="max">
+	<div id="max-min">
+		<div id="content">
+	     	<a id="pre"><</a>
+	        <img id="picture" />
+	        <a id="next">></a>
+	    </div>
+
+
+	    <ul id="list">
+	    	<li><div></div></li>
+	        <li><div></div></li>
+	        <li><div></div></li>
+	        <li><div></div></li>
+	    </ul>
+	    </div>
+	</div>
+<div id="big">
+	<div class="big-min">
+	<div class="con">
+		<img src="/static/img/SPACE.jpg" >
+		<h2 class="one">IOT Maker Space</h2>
+			<p class="two">物联创客空间是一个专注于智能家居等多方面物联网知识的学习与研究。协会创立的初衷是为有志于创新，不断追求进步的莘莘学子提供一个学习交流的平台。在张胜宇老师的带领和指导下，协会成员在一些比赛及创新合作等方面均取得不错的成绩。</p>
+			<p class="shadow"></p>
+	</div>
+	
+	    <div class="con">
+			<img src="/static/img/equipment.png"  >
+			<h2 class="one">Our equipment</h2>
+			<p class="two">协会属于开放型协会，这里设有公共区，欢迎每个热爱专业的学子，配备了高质量的恒温焊台和无锡焊锡以及各类常用的元器件和多种型号的万能板，还配备了高精度的3D打印机，此外，协会还有一个公共的服务器为同学们提供各种各样的学习资料。</p>
+			<p class="shadow"></p>
+		</div>
+		
+		<div class="con">
+			<img src="/static/img/technology.png"  >
+			<h2 class="one">Our technology</h2>
+			<p class="two">我们是一个涉及多方面技术的学术性社团，希望你们能多了解我们协会，也更加希望你们能加入我们，与我们一同成长，过着不一样的大学生活。</p>
+			<p class="shadow"></p>
+			</div>
+		</div>
+</div>
+<div id="footer">
+	<p>物联创客空间</p>
+</div>
+</body>
+</html>

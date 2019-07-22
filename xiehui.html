@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>日常生活</title>
+	<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+</head>
+<style type="text/css">
+	body{
+		width:100%;
+		height:800px;
+		
+ 
+ 		 height:100%;
+		margin: 0;
+		padding: 0;
+		background-color: #FBFBFB;
+	    font-size: 18px;
+	    font-size: 1rem;
+
+	    font-family: "Microsoft YaHei", "Hiragino Sans GB", SimHei, Arial, Helvetica, sans-serif;
+	    -webkit-font-smoothing:antialiased;/*反锯齿作用，字体看起来更好*/
+	}
+
+
+
+	h1{
+		font-size: 60px;
+		margin-left: 50px;
+		color: rgb(16,148,163);
+		letter-spacing:20px;
+		display:block;
+		text-align: center;
+
+	}
+	nav{
+		
+		right: 0;
+		top: 40px;
+	}
+	.ul1 li{
+		list-style: none;
+		width:70px;
+		height: 40px;
+		border-top:1.5px solid #d1d1d1;
+		border-bottom: 1.5px solid #d1d1d1;
+		
+		text-align: center;
+		line-height: 34px;	
+		float: right;
+		padding: 10px 120px;
+		
+		z-index: 1;
+	}
+	
+	#hidden_li1 li,#hidden_li2 li{
+	    border: 0;
+	    background: rgba(222,222,222,0.05);
+	   
+}
+ul li {
+	list-style: none;
+	}
+	ul li a{
+		text-decoration: none;
+	}
+	.ul1 li a{
+		text-decoration: none;
+		color: #666;
+		display: block;
+	}
+	.ul1{
+		width: 98%;
+	}
+	
+    div li:hover{
+	animation: divLi 1s;
+	animation-fill-mode: forwards;
+}
+ul{
+	margin-right: 30px;
+}
+
+
+#hidden_li1,#hidden_li2{
+	top: 16.5px;
+	right: -1.5px;
+	margin-right: 0;
+}
+
+#div1,#div2{
+	display: none;
+	position: relative;
+	left: 120px;
+}
+#peixun_name,#huodong_name,#zouban_name,#dongyuan_name{
+	width: 80px;
+	height: 50px;
+	border-radius:15%;
+	background: rgba(106,185,189,0.5);
+	margin: 10px 0 0 10px;
+	line-height: 50px;
+	text-align: center;
+}
+#peixun,#huodong,#zouban,#dongyuan{
+	width: 98%;
+	height: 700px;
+	border:1px solid #d1d1d1; 
+	margin:0 auto; 
+	margin-top: 50px
+}
+#peixun{
+	margin-top: 150px;
+}
+#huodong,#zouban,#dongyuan{
+	height: 400px;
+}
+#mbb2,#w3d,#w51dpj,#dzcad,#pashan,#chuyou{
+	width: 48%;
+	height: 300px;
+	
+	float: left;
+
+
+	
+}
+#div6{
+	width: 99.6%;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	margin:0 auto;
+	background: rgba(125,125,125,0.3);
+
+}
+#w3d1,#mbb1,#dpj1,#cad1,#cy1,#cy2,#ps1,#ps2{
+	width: 30%;
+	height: 268px;
+	float: left;
+}
+
+#w3d_note,#mbb_note,#dpj_note,#cad_note,#ps_note,#cy_note,#zouban_note,#dongyuan_note{
+	width: 65%;
+	font-size: 18px;
+	height: 250px;
+	float: right;
+	line-height: 32px;
+	text-indent: 2em;
+	padding-top: 15px;
+	padding-right: 10px;
+	background: rgba(31,213,201,0.05);
+	
+}
+
+#zouban_note,#dongyuan_note{
+	height: 280px;
+	width: 60%;
+
+}
+#zouban_1,#dongyuan_1{
+	width: 250px;
+	height: 298px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 5px;
+}
+#the_big{
+	display:inline-table;
+	margin: 0 auto;
+}
+
+#navbar{
+ 	width: 100%
+ 	height: 70px;
+ 	
+ }
+ .navbar ul{
+ 	width: 85%;
+ 	margin-left: 50px;
+ 	display: inline-block;
+ }
+#navbar-left li{
+	height: 70px;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 3px;
+	float: left;
+}
+#navbar-left li a{
+	padding: 0 20px;
+	color: #000;
+}
+
+#navbar-left li a:hover{
+	border-bottom: 1px solid grey;
+
+}
+#navbar-left #off{
+	border-style: none;
+	padding:0;
+}
+#off img{
+	margin-top: 10px;
+	width: 45px;
+	height: 60px;
+}
+@keyframes navLi{
+		0%{background-color: #fff;}
+	    100%{background-color: rgba(16,148,163,0.2); }/*hover效果*/
+    }
+    nav li:hover{
+	animation: navLi 1s;
+	animation-fill-mode: forwards;
+}
+   @keyframes divLi{
+		0%{background-color:#ffe;}
+	    100%{background-color: rgba(31,213,201,0.1);}
+    }
+    div li:hover{
+	animation: divLi 1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes navLi{
+		0%{background-color: #fff;}
+	    100%{background-color: rgba(16,148,163,0.2); }/*hover效果*/
+    }
+    nav li:hover{
+	animation: navLi 1s;
+	animation-fill-mode: forwards;
+}
+   @keyframes divLi{
+		0%{background-color:#ffe;}
+	    100%{background-color: rgba(31,213,201,0.1);}
+    }
+    div li:hover{
+	animation: divLi 1s;
+	animation-fill-mode: forwards;
+}
+</style>
+<script type="text/javascript">
+	window.onload=function()
+	{
+
+		var Oplay=document.getElementById('play');
+		var Otrain=document.getElementById('train');
+		var Oplay1=document.getElementById('play1'); // 隐藏li的id
+		var Otrain1=document.getElementById('train1');
+		var Ohidden_li1=document.getElementById('hidden_li1');
+		var Ohidden_li2=document.getElementById('hidden_li2');
+		var Odiv1=document.getElementById('div1');
+		var Odiv2=document.getElementById('div2');
+		/*以下四个函数均为导航的移入移出效果*/
+		Oplay1.onmouseover=function()
+		{
+			Odiv1.style.display = 'block';
+		}
+		Oplay1.onmouseout=function()
+		{
+			Odiv1.style.display = 'none';
+		}
+		Otrain1.onmouseover=function()
+		{
+			Odiv2.style.display = 'block';
+		}
+		Otrain1.onmouseout=function()
+		{
+			Odiv2.style.display = 'none';
+		}
+
+		
+
+
+}	
+</script>
+<body>
+  <div class="navbar">
+ 	<ul id="navbar-left">
+			<li><a href="#" id="off"><img src="/static/img/logo.png" > </a></li>
+			<li><a href="index" target="_self">IOT协会</a></li>
+			<li><a href="project" target="_self">项目成果</a></li>
+			<li><a href="datum" target="_self">资料大全</a></li>
+			<li><a href="xiehui" target="_self">日常生活</a></li>	
+	</ul>
+ </div>
+ 
+
+<h1>协会日常</h1>
+<div id="the_big" >
+	<ul class="ul1">
+	<li><a href="#dongyuan" >动员大会</a></li>
+	<li><a href="#zouban" >走班</a></li>
+    
+    <li id="play1"><a href="#" id="play">活动</a>
+    <div id="div1">
+	   <ul id="hidden_li1">
+		
+		<li><a href="#pashan">爬山</a></li>
+		<li><a href="#chuyou">出游</a></li>
+	   </ul>	
+	</div>
+    </li>
+    <li class="li_left_null" id="train1"><a href="#" id="train">培训</a>
+	<div id="div2">
+	<ul id="hidden_li2">
+	    <li><a href="#mbb2">面包板</a></li>
+		<li><a href="#w3d">3D打印</a></li>	
+		<li><a href="#w51dpj">51单片机</a></li>
+		<li><a href="#dzcad">电子CAD</a></li>
+	</ul>	
+	</div>
+	
+	</li>
+    </ul>
+</div>
+
+	<div id="peixun">
+		<div id="peixun_name">培训</div>
+		<div id="mbb2">
+			<div id="div6">面包板</div>
+			<div id="mbb1"><img src="/static/img/mbb1.png" style="width: 100%;height:268px;"></div>
+			<div id="mbb_note">面包板: 由于板子上有很多小插孔，专为电子电路的无焊接实验设计制造的。由于各种电子元器件可根据需要随意插入或拔出，免去了焊接，节省了电路的组装时间，而且元件可以重复使用，所以非常适合电子电路的组装、调试和训练。 <br>	<p>面包板培训乃是我们协会的入门培训，期待更多人通过我们的培训做出更多属于自己的小作品。</p></div>
+			
+		</div>
+		<div id="w3d">
+			<div id="div6">3D打印</div>
+			<div id="w3d1"> <img src="/static/img/ww3d1.png" style="width: 100%;height:268px;">	</div>
+			<div id="w3d_note">3D打印:是一种以数字模型文件为基础,运用粉末状金属或塑料等可粘合材料,通过逐层打印的方式来构造物体的技术。 <br>	<p>而我们协会的3D打印培训是:教师弟师妹们用软件学最基础的模型制作,有兴趣的师弟师妹们后期也可以来协会,继续学习参观3D打印机的打印过程!</p></div>
+		</div>
+		
+		<div id="w51dpj">
+			<div id="div6">51单片机</div>
+			<div id="dpj1"><img src="/static/img/dpj1.png" style="width: 100%;height:268px;"></div>
+			<div id="dpj_note">51单片机是对所有兼容Intel 8031指令系统的单片机的统称。是应用最广泛的8位单片机之一,其代表型号是ATMEL公司的AT89系列。学习单片机的基础则是C语言编程。 <br>	<p>我们协会会开展C语言相关的基础培训,为单片机打下基础后则会进行51单片机的编程培训。</p></div>
+		</div>
+		<div id="dzcad">
+			<div id="div6">电子CAD</div>
+			<div id="cad1"><img src="/static/img/CAD1.png" style="width: 100%;height:268px;"></div>
+			<div id="cad_note">电子CAD：电子制图。包括原理图设计,元器件编辑,元件封装,电路板的布局设计,制作图输出等等。 <br> <p>我们协会的电子CAD培训旨在让师弟师妹们提前了解AD15的基本操作界面，以及了解制作一块基本的电路板所必经的过程。以引起师弟师妹对硬件电路设计的兴趣。</p>
+			</div>
+			
+		</div>
+	</div>
+
+	<div id="huodong">
+		<div id="huodong_name">活动</div>
+		
+		<div id="pashan">
+			<div id="div6">爬山</div>
+			<div id="ps1"><img src="/static/img/pashan1.png" style="width: 100%;height:268px;"></div>
+			<div id="ps_note">不要认为协会的人只会学习！我们可是学习运动两不误的孩子！ <br><p>闲暇之余我们也会组织外出游玩的活动。 爬山不只可以锻炼我们的身体素质,还可以增加会员之间的感情。促进大家之间的沟通交流。</p></div>
+		</div>
+		<div id="chuyou">
+			<div id="div6">出游</div>
+			<div id="cy1"><img src="/static/img/chuyou1.png" style="width: 100%;height:268px;"></div>
+			<div id="cy_note">我们协会的每年换届之时，都会组织一次集体大出游活动！ <br><p>笔架山漂流！品尝客家菜！大吃清远鸡！真人CS大战！自助野炊！真心大冒险！这是我们这一年的暴风雨旅程。我们也期待着下一届的你们碰撞出的火花！</p></div>
+			
+		</div>
+	</div>
+
+	<div id="zouban">
+		<div id="zouban_name">走班</div>
+		<div id="zouban_1"><img src="/static/img/zouban3.jpg" style="width: 100%;height:298px;"></div>
+		<div id="zouban_1"><img src="/static/img/zouban2.jpg" style="width: 100%;height:298px;"></div>
+		<div id="zouban_note"> 走班宣传： 是你们了解物联创客空间协会的渠道之一。对于大多数人来说,可能也是因为有了走班宣传,才让你们知道了有格物园B509这个地方的存在。我们带上协会的作品,向你们展示我们协会历年来的成果。 <p>协会创立至今已是第四年,现在协会有四部分人员,分别是新生、大二的、大三的以及流动人员。我们希望无论哪部分人员来到物联创客都能踏踏实实做项目,在项目中成长。然而宣传中除了希望你们能多了解我们协会,也更加希望你们能加入我们,与我们一同成长,过着不一样的大学生活。
+</p></div>
+
+
+
+		
+	</div>
+	
+	
+<div id="dongyuan">
+		<div id="dongyuan_name">动员大会</div>
+		<div id="dongyuan_1"><img src="/static/img/dy2.jpg" style="width: 100%;height:298px;"></div>
+		<div id="dongyuan_1"><img src="/static/img/dy1.jpg" style="width: 100%;height:298px;"> </div>
+		<div id="dongyuan_note"> 动员大会：是我们为了让师弟师妹们更进一步了解协会以及以及坚定留在协会的决心所召开的大会。协会邀请了我们协会的指导老师——张胜宇老师以及往届的师兄师姐们向你们传授的关于在协会的经验。并且对下一届寄予了深切的期望。同时协会现任会长也宣布了协会即将努力的方向和目标。以及新生代表也讲述了在协会的学习情况和感受。 <p> 我们选择了加入协会,说明我们热爱学习既然选择了远方，,便只顾风雨兼程我们选择了挑战,就不能轻易放弃,而是想着如何去尝试着战胜努力不一定成功,但不努力一定很舒服！既然选择了加入我们,那就请和我们一起用热血去拼搏永远热泪盈眶！</p></div>
+	
+
+
+</body>
+
+</html>

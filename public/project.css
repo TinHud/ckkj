@@ -1,0 +1,181 @@
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}
+a{text-decoration: none;}
+body{
+	font-size: 12px;
+}
+
+#navbar{
+ 	width: 100%
+ 	height: 70px;
+ 	
+ }
+ .navbar ul{
+ 	width: 85%;
+ 	margin-left: 80px;
+ 	display: inline-block;
+ }
+#navbar-left li{
+	height: 70px;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 3px;
+	float: left;
+
+}
+#navbar-left li a{
+	padding: 0 20px;
+	color: #000;
+}
+
+#navbar-left li a:hover{
+	border-bottom: 1px solid grey;
+
+}
+#navbar-left #off{
+	border-style: none;
+	padding:0;
+}
+#off img{
+	width: 45px;
+	height: 60px;
+	margin-top: 10px;
+}
+
+
+#top{
+	height: 120px;
+	width: 100%;
+}
+#top .title{
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+#top .title .pro{
+	float: left;
+	height: 100%;
+	width: 190px;
+	line-height: 120px;
+}
+#top .title .pro>h1{
+	font-size: 40px;
+	color: #1094A3;
+	font-weight: bold;
+}
+#xiao{
+	height: 40px;
+	width: 100%;
+}
+#xiao .left{
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+
+#content{
+	height: 2100px; 
+	width: 100%;
+}
+h2{
+	font-size: 24px;
+	color: #1fd5c8;
+	font-weight:bold;
+}
+h3{
+	font-size: 20px;
+	color: #6ab9bd;
+}
+p{
+	text-indent: 2em;
+	font-size: 14px;
+}
+.one,.two,.three,.four,.five,.six,.seven,.eight,.nine{
+	height: 200px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.ten{
+	height: 200px;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	box-sizing: border-box;
+}
+img{height: 200px;}
+#content .one .txt{
+	height: 100%;
+	width: 1060px;
+	float: right;
+	text-align: center;
+}
+#content .two .txt{
+	height: 100%;
+	width: 922px;
+	float: right;
+	text-align: center;
+}
+#content .three .txt{
+	height: 100%;
+	width: 1077px;
+	float: right;
+	text-align: center;
+}
+#content .four .txt{
+	height: 100%;
+	width: 997px;
+	float: right;
+	text-align: center;
+}
+#content .five .txt{
+	height: 100%;
+	width: 975px;
+	float: right;
+	text-align: center;
+}
+#content .six .txt{
+	height: 100%;
+	width: 923px;
+	float: right;
+	text-align: center;
+}
+#content .seven .txt{
+	height: 100%;
+	width: 944px;
+	float: right;
+	text-align: center;
+}
+#content .eight .txt{
+	height: 100%;
+	width: 923px;
+	float: right;
+	text-align: center;
+}
+#content .nine .txt{
+	height: 100%;
+	width: 1049px;
+	float: right;
+	text-align: center;
+}
+#content .ten .txt{
+	height: 100%;
+	width: 1039px;
+	float: right;
+	text-align: center;
+}

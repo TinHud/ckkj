@@ -1,0 +1,186 @@
+html{
+	font-size: 16px;
+}
+body{
+	 background-color:rgb(254,254,254);
+	font-size: 16px;
+}
+body,p,ul,li,h1{
+	margin: 0px;
+	padding: 0px;
+}
+
+#img404{
+	text-align:center;
+}
+
+ #navbar{
+ 	width: 100%;
+ 	height: 70px;
+ }
+ .navbar ul{
+ 	width: 85%;
+ 	margin-left: 80px;
+ 	display: inline-block;
+ }
+#navbar-left li{
+	height: 70px;
+	line-height: 70px;
+	font-weight: bold;
+	font-size: 18px;
+	letter-spacing: 3px;
+	float: left;
+}
+#navbar-left li a{
+	width: 1200px;
+	padding: 0 20px;
+	color: #000;
+}
+
+#navbar-left li a:hover{
+	border-bottom: 1px solid grey;
+
+}
+#navbar-left #off{
+	border-style: none;
+	padding:0;
+}
+#off img{
+	margin-top: 10px;
+	width: 45px;
+	height: 60px;
+}
+
+
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+
+
+ul,li,p{ 
+	 margin:0px;
+	 padding:0px;
+	}
+#max{
+	  width:100%;
+	  height:568px;
+	  position:relative;
+	}
+	#max-min{
+		width: 1200px;
+		margin: 0 auto;
+	}
+#content{
+	width:1200px; 
+	height:550px; 
+	background-color:rgb(247,247,247);
+	margin: 0 auto;
+	}  
+
+
+
+#picture{
+	 width:80%;
+	 height:550px;
+	 margin: 0 10% 0 10%;
+	}
+
+#list{
+	position:relative; 
+	bottom:35px; 
+	left:435px;
+	margin:0 10% 0 10%;
+	 }       
+#list li{
+	      float:left;
+		  width:15px; 
+		  height:15px;
+		  background:#999;
+		  border-radius:15px;
+		  list-style-type:none;
+		  margin-right:8px;
+		  
+		}
+#content a{
+	font-size:30px;
+	line-height:60px;
+	width:60px; 
+	height:60px; 
+	background:rgb(16,148,163);
+	position:absolute; 
+	top:50%;
+	text-align:center;
+	border-radius:60px; 
+	color:#FFF; 
+	font-weight:bold;
+	opacity:0.5;
+}
+#pre{left:25px;}
+#next{right:25px;}
+#list .active{background:rgb(16,148,163);}
+#content .hover{opacity:1}
+
+#big{
+	width: 100%;
+	height: 600px;
+	margin-top: 15px;
+}
+
+.con{
+			width: 320px;
+			height: 256px;
+			float: left;
+			margin: 0px 40px 0px 40px;
+			
+		}
+.big-min{
+	width: 1200px;
+	height:600px;
+	margin: 0 auto;
+}
+.con img{
+		 
+		width:320px ;
+		height:250px;
+	}
+.con .shadow{
+			width: 320px;
+			height: 5px;
+			background: url(img/yinying.jpg) no-repeat;
+		}
+.con .one{
+			width:320px;
+			height: 50px;
+			padding-left: 10px;
+			line-height: 50px;
+			font-size: 23px;
+			font-weight: bold; 
+			border-bottom: 2px solid #ddd;
+		}
+.con .two{
+			width:320px;
+			height: 200px;
+			padding-left: 10px;
+			line-height: 25px;
+			font-size: 19px; 
+			padding: 10px 0 0 10px;
+			color: #001;
+		}
+
+	
+	#footer{
+		width: 100%;
+		height: 58px;
+		line-height: 26px;
+		background: rgb(100,207,235);
+		color: #fff;
+		text-align: center;
+		padding-top: 40px;
+	}
+	#footer-min{
+		width: 1200px;
+	}
