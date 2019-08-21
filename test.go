@@ -16,7 +16,7 @@ func main() {
 	mux.HandleFunc("/xiehui", xiehui)
 	mux.HandleFunc("/project", project)
 	server := &http.Server{
-		Addr:    "0.0.0.0:9655",
+		Addr:    "0.0.0.0:80",
 		Handler: mux,
 	}
 
